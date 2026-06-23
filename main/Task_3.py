@@ -3,7 +3,7 @@ from dash import Dash, html, dcc
 import plotly.express as px
 
 # Load data
-df = pd.read_csv("formatted_output.csv")
+df = pd.read_csv(r"D:\Python\Quantium\quantium-starter-repo-main\quantium-starter-repo-main\data\formatted_output.csv")
 
 df["Date"] = pd.to_datetime(df["Date"])
 df = df.sort_values("Date")
